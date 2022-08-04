@@ -33,3 +33,7 @@ Web servive provides an interface to applications to manipulate and retrieve inf
 JSON Explanation:
 Javascript object notation
 Any data that is returned from an endpoint is automatically converted to a JSON format.
+
+Query parameters are a defined set of parameters attached to the end of a url.
+They are extensions of the URL that are used to help define specific content or actions based on the data being passed. 
+To append query params to the end of a URL, a ‘?’ Is added followed immediately by a query parameter.
