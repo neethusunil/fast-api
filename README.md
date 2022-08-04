@@ -22,3 +22,14 @@ POST: sending information or creating something new
 PUT: Update something that is already existing in database
 
 DELETE: delete
+
+To run the code: in command line type --- uvicorn working:app --reload
+
+
+What is an API?
+Application Programming Interface
+Web servive provides an interface to applications to manipulate and retrieve information.
+
+JSON Explanation:
+Javascript object notation
+Any data that is returned from an endpoint is automatically converted to a JSON format.
