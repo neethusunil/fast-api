@@ -1,8 +1,14 @@
 from fastapi import FastAPI, Path
 from typing import Optional
+from pydantic import BaseModel
 
 #create an object
 app = FastAPI() 
+
+class Item(BaseModel):
+    name: str
+    price: float
+    brand: Optional[str] = None
 
 inventory = {
     1: {
@@ -24,3 +30,9 @@ def get_item(test: int,name: Optional[str] = None ):
         if inventory[item_id]["name"] == name:
             return inventory[item_id]
     return {"Data": "Not found"}
+
+
+#request body
+@app.post("/create-item")
+def create_item(item: Item):
+    return{}
